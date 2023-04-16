@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MJ Fitness</title>
+  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background: url(img/bg.jpg);
+      color: cornsilk;
+      font-family: "Barlow Condensed", sans-serif;
+    }
+    .left {
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      left: 40px;
+    }
+    .left img {
+      width: 100px;
+      filter: invert(100%);
+    }
+    .left div {
+      text-align: center;
+      line-height: 0px;
+      font-size: 20px;
+    }
+    .navbar {
+      /* border: 2px solid lightgreen; */
+      display: block;
+      margin: 40px auto;
+      width: 33%;
+      padding-left: 10px;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 18px;
+    }
+    .navbar li a {
+      text-decoration: none;
+      color: white;
+      padding: 20px 21px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: rgb(255, 255, 167);
+    }
+    .right {
+      /* border: 2px solid yellowgreen; */
+      display: inline-block;
+      position: absolute;
+      top: 35px;
+      right: 40px;
+    }
+    .btn {
+      margin: 0px 8px;
+      color: white;
+      background-color: black;
+      padding: 6px 15px;
+      border: 2px solid rgb(255 175 175 / 39%);
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      font-family: "Barlow Condensed", sans-serif;
+    }
+    .btn:hover {
+      background-color: rgb(47, 47, 47);
+    }
+    .container {
+      border: 2px solid yellow;
+      margin: 90px 43px;
+      padding: 25px;
+      width: 33%;
+      border-radius: 15px;
+      margin: 80px auto;
+    }
+    .form-group input {
+      text-align: center;
+      display: block;
+      width: 251px;
+      padding: 9px;
+      border: 2px solid black;
+      margin: 11px auto;
+      font-size: 17px;
+      border-radius: 10px;
+      font-family: "Barlow Condensed", sans-serif;
+    }
+    .container h1 {
+      text-align: center;
+    }
+    #subbtn {
+      display: block;
+      width: 28%;
+      margin: 17px auto;
+    }
+    #Gender {
+      margin-left: 116px;
+      border: 2px solid white;
+      padding: 2px 5px;
+      width: 256px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 16px;
+    }
+    #Gender .gender-option {
+      display: inline-block;
+      width: 20px;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="img/logo.png" alt="logo" />
+        <div>MJ Fitness</div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact US</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join The Best Gym In Tumkur</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality" />
+        </div>
+        <div class="form-group">
+            <input type="number" name="" placeholder="Enter your Phone Number" />
+        </div>
+        <div class="form-group">
+            <input type="email" name="" placeholder="Enter your Email" />
+        </div>
+        <div class="form-group" id="Gender">
+          Gender : Male
+          <input type="radio" name="myGender" class="gender-option" /> Female
+          <input type="radio" name="myGender" class="gender-option" /> Others
+          <input type="radio" name="myGender" class="gender-option" />
+        </div>
+        <button class="btn" id="subbtn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
